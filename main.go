@@ -35,7 +35,7 @@ func main() {
 			url := "https://your_domain"
 			method := "POST"
 
-			payload := strings.NewReader("code=tour_code")
+			payload := strings.NewReader("code=your_code")
 
 			req, err := http.NewRequest(method, url, payload)
 
