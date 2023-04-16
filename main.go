@@ -35,7 +35,7 @@ func main() {
 			url := "https://your_domain"
 			method := "POST"
 
-			payload := strings.NewReader("code=your_code")
+			payload := strings.NewReader("code=your payload")
 
 			req, err := http.NewRequest(method, url, payload)
 
@@ -45,9 +45,9 @@ func main() {
 			}
 			req.Header.Add("cache-control", "no-cache")
 			req.Header.Add("content-type", "application/x-www-form-urlencoded")
-			req.Header.Add("postman-token", "")
+			req.Header.Add("postman-token", "cd529796-9c73-9e93-a2d6-6a2d8e767dbe")
 			req.Header.Add("acce", "application/json")
-			req.Header.Add("host", "your_host")
+			req.Header.Add("host", "api.snappxtage.ir")
 
 			res, err := client.Do(req)
 			if err != nil {
